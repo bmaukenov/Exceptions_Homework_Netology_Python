@@ -2,22 +2,22 @@ equation = input("What is your equation?").split()
 
 
 
-if equation[0] != "+" or  equation[0] != "-" or  equation[0] != "*" or  equation[0] != "/":
+if equation[0] == "+" or equation[0] == "-" or equation[0] == "*" or equation[0] == "/":
   sign_correct = False
 
 try:
- assert sign_correct
+  assert sign_correct
  
 
 
- if equation[0] == "+":
-   answer = int(equation[1]) + int(equation[2])
- elif equation[0] == "-":
-   answer = int(equation[1]) - int(equation[2])
- elif equation[0] == "*":
-   answer = int(equation[1]) * int(equation[2])
- else:
-   answer = int(equation[1]) / int(equation[2])
+  if equation[0] == "+":
+    answer = int(equation[1]) + int(equation[2])
+  elif equation[0] == "-":
+    answer = int(equation[1]) - int(equation[2])
+  elif equation[0] == "*":
+    answer = int(equation[1]) * int(equation[2])
+  else:
+    answer = int(equation[1]) / int(equation[2])
  
 
 
